@@ -1,0 +1,29 @@
+{
+  "name": "YouTube履歴取得くん",
+  "version": "1.0.0",
+  "description": "俺を信じてくれ…",
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "history.png"
+  },
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "history",
+    "tabs",
+    "http://localhost/*",
+    "http://133.43.7.172/*"
+  ],
+  "background": {
+    "scripts": ["background.js","jquery-3.6.0.min.js"],
+    "persistent": true
+  }, 
+  "icons": {
+    "16": "history.png",
+    "48": "history.png",
+    "128": "history.png"
+  },
+  "manifest_version": 2
+}
